@@ -1,0 +1,7 @@
+#!/usr/bin/env sh
+
+clojure \
+    -M \
+    --main figwheel.main \
+    --build dev \
+    --repl

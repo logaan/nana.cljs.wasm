@@ -1,0 +1,4 @@
+{:deps {com.bhauman/figwheel-main {:mvn/version "0.2.18"}
+        com.bhauman/rebel-readline-cljs {:mvn/version "0.1.4"}
+        org.slf4j/slf4j-nop {:mvn/version "1.7.36"}}
+ :paths ["src" "target" "resources"] }
