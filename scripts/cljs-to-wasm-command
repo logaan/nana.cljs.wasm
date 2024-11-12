@@ -1,0 +1,5 @@
+#!/usr/bin/env sh
+
+./scripts/advanced-build-once
+./scripts/append-shell
+./scripts/wasm-run

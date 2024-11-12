@@ -1,7 +1,0 @@
-package example:component;
-
-world example {
-    export run: interface {
-        run: func() -> result;
-    }
-}
