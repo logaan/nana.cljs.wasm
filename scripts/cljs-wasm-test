@@ -1,0 +1,9 @@
+#!/usr/bin/env sh
+
+./scripts/advanced-test-build-once
+
+cp target/public/cljs-out/dev-main.js target/public/cljs-out/test.js
+echo '\n\n// Wasm component shell\n' >> target/public/cljs-out/test.js
+cat src/test/core.shell.js >> target/public/cljs-out/test.js
+
+./scripts/wasm-test-run

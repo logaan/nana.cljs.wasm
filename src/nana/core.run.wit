@@ -1,0 +1,7 @@
+package nana:core;
+
+world core {
+    export run: interface {
+        run: func() -> result;
+    }
+}

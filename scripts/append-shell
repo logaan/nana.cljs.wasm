@@ -1,5 +1,0 @@
-#!/usr/bin/env sh
-
-cp target/public/cljs-out/dev-main.js target/public/cljs-out/example.js
-echo '\n\n// Wasm component shell\n' >> target/public/cljs-out/example.js
-cat src/example/core.shell.js >> target/public/cljs-out/example.js

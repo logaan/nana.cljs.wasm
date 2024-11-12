@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+rm -rf wasm
+mkdir wasm
+
+# Build the wasm
+jco componentize \
+    target/public/cljs-out/test.js \
+    --wit src/test/core.wit \
+    --world-name test \
+    --out wasm/test.core.wasm
+
+# Run it as a command
+jco run wasm/test.core.wasm
