@@ -1,0 +1,8 @@
+#!/usr/bin/env sh
+
+clojure \
+    -M \
+    --main figwheel.main \
+    --optimizations advanced \
+    --build dev \
+    --serve
