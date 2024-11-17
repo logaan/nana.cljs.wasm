@@ -1,0 +1,42 @@
+Record package {
+  name string
+}
+
+Record type-alias {
+  name string
+  type string
+}
+
+Record record {
+  name    string
+  fields  list<tuple<string, string>>
+}
+
+Record function {
+  name        string
+  params      list<tuple<string, string>>
+  return-type option<string>
+}
+
+Variant interface-part {
+  type-alias(type-alias),
+  record(record),
+  func(function),
+  use(string, list<string>) # Package and names
+}
+
+Record interface {
+  name string
+  parts list<interface-part>
+}
+
+Variant world-part {
+  type-alias(type-alias),
+  func(function),
+  interface(interface),
+}
+
+Record world {
+  name  string
+  parts list<world-part>
+}

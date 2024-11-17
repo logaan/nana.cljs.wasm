@@ -1,0 +1,4 @@
+Macro "Package" [name]
+  Quote
+    Def package nana:wit/package{name: Unquote string(name)}
+
