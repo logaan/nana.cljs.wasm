@@ -3,5 +3,5 @@
 clojure \
     -M \
     --main figwheel.main \
-    --build dev \
+    --build test \
     --repl
